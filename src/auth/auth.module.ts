@@ -8,7 +8,7 @@ import { AuthController } from './auth.controller';
 @Module({
   imports: [PassportModule, 
     JwtModule.register({
-      secret: process.env.JWT_SECRET,
+      secret: 'secret',
       signOptions: {
         expiresIn: 3600,
       }
